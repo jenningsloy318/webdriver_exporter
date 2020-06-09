@@ -19,7 +19,7 @@ all:  fmt style  build
 
 build: | 
 	@echo ">> building binaries"
-	$(GO) build -o build/webdriver_exporter main.go probe.go 
+	$(GO) build -o build/webdriver_exporter
 
 
 fmt:
