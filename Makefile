@@ -19,7 +19,7 @@ all:  fmt style  build
 
 build: | 
 	@echo ">> building binaries"
-	$(GO) build -o build/webdriver_exporter
+	$(GO) build -o build/webdriver_exporter -ldflags  '-X "github.com/prometheus/common/version.Branch=$(BRANCH)" -X "github.com/prometheus/common/version.Revision=$(REVERSION)" -X "github.com/prometheus/common/version.BuildUser=$(USER)"  -X "github.com/prometheus/common/version.BuildDate=$(TIME)"  '
 
 
 fmt:
