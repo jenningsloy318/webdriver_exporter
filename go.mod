@@ -1,4 +1,4 @@
-module github.com/mattbostock/webdriver_exporter
+module github.com/jenningsloy318/webdriver_exporter
 
 go 1.14
 
